@@ -19,8 +19,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <button ref={(node) => this.button = node}>...</button>
     </div>
   );
 }
 
 export default App;
+
+export const add =(x,y) =>{
+  return x + y
+}
