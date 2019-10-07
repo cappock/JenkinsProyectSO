@@ -2,6 +2,10 @@
   "name": "todeployjenkis",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.11.3",
+    "node": "10.15.3"
+  },
   "dependencies": {
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
@@ -11,9 +15,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+<<<<<<< HEAD
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha --colors --reporter mocha-jenkins-reporter"
+=======
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+>>>>>>> 88a47099880562598533386ff4d7fee80de54569
   },
   "eslintConfig": {
     "extends": "react-app"
